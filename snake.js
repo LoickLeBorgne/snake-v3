@@ -81,7 +81,7 @@ window.onload = function () {
             ctx.drawImage(img, imageX, imageY, newWidth, newHeight);
 
         };
-        ctx.fillText("Inès : 2", centreX, canvasHeight - 60);
+        ctx.fillText("Best score Inès : 6", centreX, canvasHeight - 60);
         ctx.fillText("t nul", centreX, canvasHeight - 90);
         img.src = 'tulipe.png';
         ctx.restore();
@@ -96,7 +96,7 @@ window.onload = function () {
     function drawScore() {
         ctx.save();
         ctx.font = "95px Alfa Slab One, serif";
-        ctx.fillStyle = "white";
+        ctx.fillStyle = "#22004c";
         ctx.textAlign = "center";
         ctx.textBaseline = "middle";
         var centreX = canvasWidth / 2;
