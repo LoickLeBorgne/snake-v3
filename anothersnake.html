@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    <title>SnakeGame</title>  
+    <script src="anothersnake.js"></script>
+</head>
+<body>
+  <script>
+
+
+
+
+
+
+
+
+
+audio.muted = true;
+
+// Gestionnaire d'événements pour détecter une interaction de l'utilisateur avec la page
+document.addEventListener('click', function() {
+  // Définit la propriété muted à false pour activer le son
+  audio.muted = false;
+
+  // Lance la lecture de l'audio
+  audio.play();
+
+  // Retire l'événement pour éviter de lancer la lecture à nouveau
+  document.removeEventListener('click', arguments.callee);
+});
+  </script>
+
+	<audio id="myAudio">
+		<source src="music.mp3" type="audio/mpeg">
+	</audio>
+    <h1>Jeu du serpent</h1>
+
+
+    
+
+
+
+</body>
+</html>
